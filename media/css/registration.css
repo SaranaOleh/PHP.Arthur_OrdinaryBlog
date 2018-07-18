@@ -1,0 +1,43 @@
+main{
+    width: 100%;
+}
+
+main>form{
+    width: 380px;
+    margin: 100px auto;
+}
+main>form>div{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+main>form>div>label{
+    font-family: open_sansregular;
+}
+
+
+main>form>div>input{
+    width: 200px;
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    border: 1px solid gray;
+    color: white;
+    background: #252525;
+}
+main>form>div:last-child>input{
+    background: #e76049;
+}
+main>form>div:last-child{
+    justify-content: flex-end;
+}
+main>form>div>span{
+    display: block;
+    font-family: open_sansregular;
+    font-weight: bold;
+    color: #e76049;
+    margin-left: 10px;
+    position: absolute;
+    right: 0px;
+    transform: translate(100%);
+    margin-right: -20px;
+}

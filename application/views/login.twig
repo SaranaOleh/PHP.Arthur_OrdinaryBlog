@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{ URLROOT }}media/css/login.css">
+<main>
+    <form action="{{ URLROOT }}login" method="post">
+        <input type="text" name="login" placeholder="login" value="{{ old.login?old.login:"" }}">
+        <label for="#long">stay online</label><input type="checkbox" name="long" id="#long"><br>
+        <input type="password" name="pass" placeholder="password"><br>
+        <input type="hidden" name="request" value="{{ request }}">
+        <input type="submit" value="enter"><span class="error_text">{{ error }}</span>
+        <p>OR</p>
+        <a href="{{ URLROOT }}regestry">REGISTER</a>
+    </form>
+</main>

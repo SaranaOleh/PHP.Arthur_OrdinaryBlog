@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ URLROOT }}media/css/main.css">
+<main>
+    {% for post in posts %}
+        <div class="post">
+            <div class="img">
+                <div class="hover">
+                    <ul><a href="categories/{{ post.getCategory().name }}/{{ post.id }}">
+                            <li><i class="icon-right-thin"></i></li>
+                            <li>READ MORE</li>
+                        </a></ul>
+                </div>
+                <img src="{{ post.getImage().url }}" alt=""></div>
+            <div class="stat"><i class="icon-calendar"></i><span class="date">{# date('d M Y',post.time) #}{{ post.time }}</span>
+                <i class="icon-comment"></i><span class="comments">{{ post.views }}</span>
+                <p>Comments</p><i class="icon-thumbs-up"></i><span class="likes">{{ post.likes }}</span>
+                <p>likes</p>
+            </div>
+            <div class="desc">
+                <p>{{ post.name }}</p>
+                <p>{{ post.text|raw }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</main>

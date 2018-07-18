@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ URLROOT }}media/css/details.css">
+<main>
+    <div class="post">
+        <img src="{{ URLROOT }}{{ post.getImage().url }}" alt="">
+        <div class="container">
+            <ul class="stat">
+                <li>
+                    <p>date</p>
+                    <p>{# date('d M Y',post.time) #}{{ post.time }}</p>
+                </li>
+                <li>
+                    <p>Comments</p>
+                    <p>{{ post.views }}</p>
+                </li>
+                <li>
+                    <p>Likes</p>
+                    <p>{{ post.likes }}</p>
+                </li>
+                <a href="{{ URLROOT }}categories/{{ category }}/{{ post.id }}/likes">Nravitsa</a>
+            </ul>
+
+            <div class="cont">
+                <h1>{{ post.name }}</h1>
+                <p>{{ post.text|raw }}</p>
+            </div></div>
+    </div>
+    <div class="post_ctrl">
+        <a href="{{ URLROOT }}categories/{{ category }}"><i class="icon-cancel"></i></a>
+        <a href="{{ URLROOT }}categories/{{ category }}/{{ prev }}"><i class="icon-left-open"></i></a>
+        <a href="{{ URLROOT }}categories/{{ category }}/{{ next }}"><i class="icon-right-open"></i></a>
+    </div>
+</main>

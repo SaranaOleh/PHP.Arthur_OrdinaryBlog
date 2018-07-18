@@ -1,0 +1,72 @@
+
+main{
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+h1{
+    width: 100%;
+    color: white;
+}
+main>.post>.img{
+    position: relative;
+    width: 100%;
+}
+main>.post>.img>.hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgba(255,70,11,0.7);
+    justify-content: center;
+    align-items: center;
+}
+main>.post>.img>.hover>ul>a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: montserratregular;
+    font-weight: bold;
+}
+main>.post>.img>.hover>ul>a>li{
+    border: 2px solid #fff;
+    padding: 6px;
+}
+main>.post>.img>.hover>ul>a>li:first-child{
+    border-right: 0;
+}
+main>.post>.img:hover .hover{
+    display: flex;
+}
+main>.post>.img>img{
+    width: 100%;
+}
+main>.post>.stat{
+    display: flex;
+    margin:10px 0 0 0px;
+}
+main>.post>.desc{
+    margin: 15px;
+}
+main>.post>.desc>p:first-child{
+    font-family: montserratregular;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #313131;
+}
+main>.post>.desc>p:last-child{
+    font-family: open_sansregular;
+}
+main>.post{
+    width: 30%;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+}
+main>.post>.stat>i{
+    margin-left: 15px;
+}

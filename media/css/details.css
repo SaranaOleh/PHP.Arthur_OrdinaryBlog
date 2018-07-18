@@ -1,0 +1,53 @@
+main{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+main>.post_ctrl{
+    display: flex;
+    flex-direction: column;
+}
+main>.post_ctrl>a{
+    color: #695e5e;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #695e5e;
+    border-bottom: 0;
+}
+main>.post_ctrl>a:last-child{
+    border-bottom: 1px solid #695e5e;
+}
+main>.post_ctrl>a:hover{
+    background: #f7f7f7;
+}
+main>.post{
+    width: 100%;
+    margin-right: 1%;
+}
+main>.post>img{
+    width: 100%;
+    max-height: 500px;
+    background: #e76049;
+}
+main>.post>.container{
+    display: flex;
+    padding: 1% 5%;
+}
+main>.post>.container>.stat{
+    margin-right: 2%;
+    white-space: nowrap;
+    text-align: right;
+}
+main>.post>.container>.stat>li{
+    border-bottom: 1px solid #695e5e;
+    padding: 20px 0 20px 40px;
+    font-family: open_sansregular;
+}
+main>.post>.container>.stat>li>p:first-child{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+main>.post>.container>.cont>h1{
+    margin-bottom: 20px;
+}

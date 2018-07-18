@@ -1,0 +1,49 @@
+
+main{
+    width: 100%;
+}
+
+main>form{
+    width: 500px;
+    margin: 100px auto;
+}
+main>form>input{
+    width: 200px;
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    border: 1px solid gray;
+    color: white;
+    background: #252525;
+}
+
+main>form>input:nth-of-type(5){
+    background: #e76049;
+
+}
+main>form>label{
+    font-family: open_sansregular;
+    margin-left: 20px;
+}
+main>form>input:nth-of-type(2){
+    width: auto;
+    margin: 2px 0 0 5px;
+}
+
+main>form>p{
+    margin: 5px 20px;
+    font-family: open_sansregular;
+}
+main>form>a{
+    font-family: montserratregular;
+    font-weight: bold;
+    color: #252525;
+}
+main>form>a:hover{
+    color: #e76049;
+}
+main>form>.error_text{
+    font-family: open_sansregular;
+    font-weight: bold;
+    color: #e76049;
+    margin-left: 10px;
+}
